@@ -1,0 +1,21 @@
+import java.util.Random;
+public class RandomNumber
+{
+    public static int genRandom(int randomRange)
+    {
+      return new Random().nextInt(randomRange);
+    }
+    public static void genRandom(int randomRange, int displayCount)
+    {
+        for (int i=0; i < displayCount; i++)
+        {
+            System.out.println("Random  [Number " + (i +1)+ " is]:" +genRandom(randomRange));
+        }
+    }
+    public static void main (String[] args)
+    {
+        int randomRange = 100;
+        int displayCount = 5;
+        RandomNumber.genRandom(randomRange, displayCount);
+    }
+}

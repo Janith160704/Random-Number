@@ -1,0 +1,16 @@
+import java.util.Random;
+public class RandomNumbers
+{
+    static Random randomNum = new Random();
+    public static void main(String[] args)
+    {
+        for(int i=0; i<5; i++)
+        {
+            System.out.println("Random  Number " + (i +1)+ " is : " +genRandom());
+        }
+    }
+    public static int genRandom()
+    {
+        return randomNum.nextInt(100);
+    }
+}
